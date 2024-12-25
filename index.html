@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru"> <!-- Указал более точный язык страницы -->
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- МЕТА-ОПИСАНИЕ ДЛЯ SEO -->
+  <meta name="description" content="Резюме: Анучин Александр. Html/Css/Js/Python/Django-разработчик. Проекты, навыки и контакты.">
+  <meta name="keywords" content="резюме, разработчик, python, django, верстка, html, css, js">
+  <link rel="stylesheet" href="reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 
-
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Стили -->
   <link rel="stylesheet" href="style.css">
 
   <title>Resume</title>
 </head>
-
 <body>
 
+  <!-- ========= HEADER ========= -->
   <header>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid px-4">
         <a class="navbar-brand" href="#">Моё Резюме</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-          aria-controls="mainNav" aria-expanded="false" aria-label="Переключить меню">
+                aria-controls="mainNav" aria-expanded="false" aria-label="Переключить меню">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Навыки</a></li>
-            <li class="nav-item"><a class="nav-link"
-                href="https://github.com/alexanderanuchin/django_project">Проекты</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/alexanderanuchin/django_project">Проекты</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Блок приветствия -->
     <div class="hero-content">
       <h1>Привет, я Анучин Александр.</h1>
       <p>
@@ -50,10 +57,7 @@
     </div>
   </header>
 
-
-
-
-
+  <!-- ========= MAIN ========= -->
   <main id="about" class="container-fluid">
     <div class="d-flex justify-content-center mb-5">
       <h1 class="fs-1">Обо мне</h1>
@@ -64,38 +68,38 @@
       </div>
       <div class="col-12 col-md-8 mt-4 mt-md-0">
         <h1>Анучин Александр Михайлович</h1>
-        <h6 class="border-bottom pb-3 mb-4">Место проживания: гор. Москва, Котельники(Белая-дача), гор. Пенза,
-          ул.Воронова.</h6>
+        <h6 class="border-bottom pb-3 mb-4">Место проживания: гор. Москва, Котельники(Белая-дача), гор. Пенза, ул.Воронова.</h6>
         <h6 class="border-bottom pb-3 mb-4">Возраст: 34 года.</h6>
-        <h6 class="border-bottom pb-3 mb-4">Армия: 23 отдельная мотострелковая бригада, Самара, пос. Кряж. 2009-2010,
-          зкв-ко мл.сержант взвода управления, роты управления.</h6>
+        <h6 class="border-bottom pb-3 mb-4">
+          Армия: 23 отдельная мотострелковая бригада, Самара, пос. Кряж. 2009-2010,
+          зкв-ко мл.сержант взвода управления, роты управления.
+        </h6>
         <h6 class="border-bottom pb-3 mb-4">Образование: Высшее.</h6>
         <h6 class="border-bottom pb-3 mb-4">
           <p>Обучение:</p>
           <ol style="list-style-type: disc;">
             <li>ФГБОУВО "Пензенский государственный аграрный университет, агрохимик агропочвовед".</li>
             <li>ДПО "Образовательные технологии Скилбокс(Коробка навыков), Python разработчик".</li>
-            <li>ДПО "ТГУ "web программист(вёрстка)".</li>
+            <li>ДПО "ТГУ" web программист(вёрстка).</li>
           </ol>
         </h6>
-
         <h6>
           <p>Работа:</p>
           <ol style="list-style-type: disc;">
             <li>ИП Самышкин В.Н.: ведущий агроном</li>
             <li>ИП Анучин А.М.: Владелец интернет магазина умный-сад.рф</li>
-            <li>ЗАО смф"Тв-связь": Руководитель по развитию магазина "Кровля-Пенза". кровля-пенза.рф</li>
+            <li>ЗАО смф "Тв-связь": Руководитель по развитию магазина "Кровля-Пенза". кровля-пенза.рф</li>
             <li>Ремонт под ключ: Начальник бригады, мастер.</li>
             <li>Фрилансер</li>
           </ol>
         </h6>
-
-        </h6>
       </div>
-
     </div>
+
+    <!-- Блоки с текстом -->
     <div class="container my-3blocks">
       <div class="row justify-content-center">
+        <!-- 1 блок -->
         <div class="col-sm-6 col-md-4 mb-4">
           <h3>Коротко обо мне</h3>
           <p class="clamped-text">
@@ -125,7 +129,7 @@
           </p>
           <span class="toggle-button">Показать полностью</span>
         </div>
-
+        <!-- 2 блок -->
         <div class="col-sm-6 col-md-4 mb-4">
           <h3>Сильные и слабые стороны</h3>
           <p class="clamped-text">
@@ -142,15 +146,14 @@
           </p>
           <span class="toggle-button">Показать полностью</span>
         </div>
-
-        <!-- Третий блок -->
+        <!-- 3 блок -->
         <div class="col-sm-6 col-md-4 mb-4">
           <h3>Мои перспективы будущего</h3>
           <p class="clamped-text">
             Вижу своё будущее в программировании как путь постоянного роста и новых возможностей. Программирование для
             меня — это не просто профессия, а искусство, где каждая строчка кода становится кирпичиком в создании
             чего-то значимого. Я стремлюсь быть не просто специалистом, а создателем решений, которые меняют жизнь людей
-            и упрощают их взаимодействие с технологиями.Хочу совершенствовать навыки взаимодействия с командой, чтобы не
+            и упрощают их взаимодействие с технологиями. Хочу совершенствовать навыки взаимодействия с командой, чтобы не
             только быть отличным исполнителем, но и брать на себя ответственность за управление проектами. В будущем
             вижу себя в роли технического лидера, вдохновляющего других на создание инновационных решений.
           </p>
@@ -159,104 +162,100 @@
       </div>
     </div>
 
-
+    <!-- ======= Мои проекты ======= -->
     <div id="skills" class="row section flex-md-row">
       <div class="d-flex justify-content-center mb-5">
         <h1 class="fs-1">Моё обучение и проекты</h1>
       </div>
       <div class="col-12 col-md-6 order-md-1">
-        <img src="img/diplomP.png" alt="">
+        <img src="img/diplomP.png" alt="Diplom Image">
       </div>
       <div class="col-12 col-md-6 mt-3 mt-md-0 d-flex flex-column align-items-center">
         <div class="clamped-text mt-md-5">
-          <p> Курс стал для меня важным этапом профессионального роста, охватив 302 часа насыщенной программы. Основной
-            упор
-            был сделан на фундаментальные знания и практические навыки, которые я успешно применил при создании
-            дипломного
-            проекта.
-
-
-            Большая часть курса была посвящена базовым и продвинутым концепциям Python. Я освоил синтаксис, структуры
-            данных, алгоритмы и основы ООП. Это позволило мне закладывать прочный фундамент для работы с Django и API.
-            Особое внимание уделялось написанию чистого, оптимизированного кода.
-            Изучение Django помогло мне понять разработку веб-приложений с использованием MVC-архитектуры. Я научился
-            создавать проекты с аутентификацией, взаимодействием с базами данных и REST API. Дипломный проект стал
-            доказательством моей способности применять эти знания на практике, создавая функциональные и масштабируемые
-            веб-приложения.
-            Раздел курса, посвящённый SQL, дал мне понимание структуры реляционных баз данных, написания сложных
-            запросов
-            и работы с ORM. Эти знания были ключевыми при разработке серверной части приложений.
-            Работа с Git позволила мне освоить управление версиями кода и совместную разработку, что важно для любого
-            программиста. Теперь я уверенно использую ветвления, слияния и разрешение конфликтов.
-            Аттестация к диплому этап курса был посвящён разработке ботов и интеграции с API.
+          <p>
+            Курс стал для меня важным этапом профессионального роста, охватив 302 часа насыщенной программы. Основной
+            упор был сделан на фундаментальные знания и практические навыки, которые я успешно применил при создании
+            дипломного проекта. Большая часть курса была посвящена базовым и продвинутым концепциям Python. Я освоил
+            синтаксис, структуры данных, алгоритмы и основы ООП. Это позволило мне закладывать прочный фундамент для
+            работы с Django и API. Особое внимание уделялось написанию чистого, оптимизированного кода. Изучение Django
+            помогло мне понять разработку веб-приложений с использованием MVC-архитектуры. Я научился создавать проекты
+            с аутентификацией, взаимодействием с базами данных и REST API. Дипломный проект стал доказательством моей
+            способности применять эти знания на практике, создавая функциональные и масштабируемые веб-приложения.
+            Раздел курса, посвящённый SQL, дал мне понимание структуры реляционных баз данных, написания сложных запросов
+            и работы с ORM. Эти знания были ключевыми при разработке серверной части приложений. Работа с Git позволила
+            мне освоить управление версиями кода и совместную разработку, что важно для любого программиста. Теперь я
+            уверенно использую ветвления, слияния и разрешение конфликтов. Аттестация к диплому этап курса был посвящён
+            разработке ботов и интеграции с API.
           </p>
-
         </div>
         <span class="toggle-button">Показать полностью</span>
-
-
       </div>
     </div>
 
+    <!-- Блок скролла проектов -->
     <div class="metallo-magic container">
       <div class="metallo-scroll">
-
+        <!-- 1 карточка -->
         <div class="metallo-card">
           <figure class="shape-box shape-box_half">
-            <img src="img/01_page.jpg" alt="vishka" class="img-fluid">
+            <img src="img/01_page.jpg" alt="django project" class="img-fluid">
             <div class="brk-abs-overlay z-index-0 opacity-60"></div>
             <figcaption>
               <div class="show-cont">
                 <h3 class="card-no">01</h3>
                 <h4 class="card-main-title">Django project</h4>
               </div>
-              <p class="card-content">Интернет-магазин — это современное веб-приложение, созданное на Django, с
-                адаптивной версткой, поддержкой пользовательского интерфейса и интеграцией с API для платежей и
-                доставки.</p>
-              <a href="https://github.com/alexanderanuchin/dpo_django?tab=readme-ov-file"
-                class="read-more-btn">Посмотреть</a>
+              <p class="card-content">
+                Интернет-магазин — это современное веб-приложение, созданное на Django, с адаптивной версткой,
+                поддержкой пользовательского интерфейса и интеграцией с API для платежей и доставки.
+              </p>
+              <a href="https://github.com/alexanderanuchin/dpo_django?tab=readme-ov-file" class="read-more-btn">Посмотреть</a>
             </figcaption>
             <span class="after"></span>
           </figure>
         </div>
-
+        <!-- 2 карточка -->
         <div class="metallo-card">
           <figure class="shape-box shape-box_half">
-            <img src="img/aiogram.png" alt="vishka" class="img-fluid">
+            <img src="img/aiogram.png" alt="Aiogram project" class="img-fluid">
             <div class="brk-abs-overlay z-index-0 opacity-60"></div>
             <figcaption>
               <div class="show-cont">
                 <h3 class="card-no">02</h3>
                 <h4 class="card-main-title">Aiogram</h4>
               </div>
-              <p class="card-content">Телеграм-бот интернет-магазина на Aiogram с каталогом, корзиной, оплатой через API
-                и отслеживанием доставки. Поддерживает регистрацию, историю заказов и простую автоматизацию покупок.</p>
+              <p class="card-content">
+                Телеграм-бот интернет-магазина на Aiogram с каталогом, корзиной, оплатой через API
+                и отслеживанием доставки. Поддерживает регистрацию, историю заказов и простую автоматизацию покупок.
+              </p>
               <a href="#" class="read-more-btn">Посмотреть</a>
             </figcaption>
             <span class="after"></span>
           </figure>
         </div>
-
+        <!-- 3 карточка -->
         <div class="metallo-card">
           <figure class="shape-box shape-box_half">
-            <img src="img/scrn.png" alt="vishka" class="img-fluid">
+            <img src="img/scrn.png" alt="Bootstrap JavaScript project" class="img-fluid">
             <div class="brk-abs-overlay z-index-0 opacity-60"></div>
             <figcaption>
               <div class="show-cont">
                 <h3 class="card-no">03</h3>
                 <h4 class="card-main-title">Bootstrap Java Script</h4>
               </div>
-              <p class="card-content">Адаптивный сайт, созданный с использованием Bootstrap и JavaScript, включает
-                современный дизайн, модальные окна, формы, интерактивность, анимации, кастомизацию.</p>
+              <p class="card-content">
+                Адаптивный сайт, созданный с использованием Bootstrap и JavaScript, включает современный дизайн, модальные окна,
+                формы, интерактивность, анимации, кастомизацию.
+              </p>
               <a href="#" class="read-more-btn">Посмотреть</a>
             </figcaption>
             <span class="after"></span>
           </figure>
         </div>
-
+        <!-- 4 карточка -->
         <div class="metallo-card">
           <figure class="shape-box shape-box_half">
-            <img src="img/scrn2.png" alt="vishka" class="img-fluid">
+            <img src="img/scrn2.png" alt="HTML CSS site" class="img-fluid">
             <div class="brk-abs-overlay z-index-0 opacity-60"></div>
             <figcaption>
               <div class="show-cont">
@@ -264,73 +263,70 @@
                 <h4 class="card-main-title">Html CSS</h4>
               </div>
               <p class="card-content">
-                Адаптивный сайт, созданный с использованием HTML и CSS, включает семантическую структуру, современный
-                дизайн, интерактивные формы, стильную типографику, сетку, кнопки, кастомизацию, уникальные темы.</p>
+                Адаптивный сайт, созданный с использованием HTML и CSS, включает семантическую структуру,
+                современный дизайн, интерактивные формы, стильную типографику, сетку, кнопки, кастомизацию, уникальные темы.
+              </p>
               <a href="#" class="read-more-btn">Посмотреть</a>
             </figcaption>
             <span class="after"></span>
           </figure>
         </div>
-
+        <!-- 5 карточка -->
         <div class="metallo-card">
           <figure class="shape-box shape-box_half">
-            <img src="img/Postgre-SQL.png" alt="vishka" class="img-fluid">
+            <img src="img/Postgre-SQL.png" alt="SQL Git" class="img-fluid">
             <div class="brk-abs-overlay z-index-0 opacity-60"></div>
             <figcaption>
               <div class="show-cont">
                 <h3 class="card-no">05</h3>
                 <h4 class="card-main-title">SQL Git</h4>
               </div>
-              <p class="card-content">SQL, Git, управление данными, запросы, база данных, версии, репозиторий,
-                нормализация, команды, интеграция, оптимизация, синхронизация, контроль версий, деплой, анализ,
-                миграции.</p>
+              <p class="card-content">
+                SQL, Git, управление данными, запросы, база данных, версии, репозиторий, нормализация, команды,
+                интеграция, оптимизация, синхронизация, контроль версий, деплой, анализ, миграции.
+              </p>
               <a href="#" class="read-more-btn">Посмотреть</a>
             </figcaption>
             <span class="after"></span>
           </figure>
         </div>
-
+        <!-- 6 карточка -->
         <div class="metallo-card">
           <figure class="shape-box shape-box_half">
-            <img src="img/rest_api.png" alt="vishka" class="img-fluid">
+            <img src="img/rest_api.png" alt="Rest API Fast API" class="img-fluid">
             <div class="brk-abs-overlay z-index-0 opacity-60"></div>
             <figcaption>
               <div class="show-cont">
                 <h3 class="card-no">06</h3>
                 <h4 class="card-main-title">Rest API Fast API</h4>
               </div>
-              <p class="card-content">REST API, FastAPI, эндпоинты, маршрутизация, JSON, CRUD, асинхронность,
-                документация, OpenAPI, валидация, деплой, OAuth2, обработка запросов, тестирование, микросервисы,
-                безопасность.</p>
+              <p class="card-content">
+                REST API, FastAPI, эндпоинты, маршрутизация, JSON, CRUD, асинхронность, документация, OpenAPI, валидация,
+                деплой, OAuth2, обработка запросов, тестирование, микросервисы, безопасность.
+              </p>
               <a href="#" class="read-more-btn">Посмотреть</a>
             </figcaption>
             <span class="after"></span>
           </figure>
         </div>
-
-
       </div>
     </div>
 
-
+    <!-- ======= Второй блок обучения ======= -->
     <div class="row section flex-md-row-reverse">
       <div class="col-12 col-md-6 order-md-2">
-        <img src="img/222.png" alt="" class="img-fluid">
+        <img src="img/222.png" alt="Верстка ДПО" class="img-fluid">
       </div>
       <div class="col-12 col-md-6 mt-3 mt-md-0 d-flex flex-column align-items-center">
         <p class="clamped-text mt-md-5">
           Прошёл курс дополнительного профессионального образования (ДПО) по веб-верстке в университете общей
           продолжительностью 144 часа. Обучение включало как теоретическую подготовку, так и обширную практическую
           работу. Изучил основы HTML, CSS и JavaScript, освоил адаптивный и кроссбраузерный дизайн, принципы семантики и
-          SEO-оптимизации.
-
-          На курсе подробно рассматривались современные подходы к верстке, включая использование сеток, Flexbox, Grid
-          Layout и модульные CSS-системы. Научился создавать формы, анимации и интерактивные элементы для улучшения
-          пользовательского опыта. Также получил практику в интеграции верстки с backend и базами данных.
-
+          SEO-оптимизации. На курсе подробно рассматривались современные подходы к верстке, включая использование сеток,
+          Flexbox, Grid Layout и модульные CSS-системы. Научился создавать формы, анимации и интерактивные элементы для
+          улучшения пользовательского опыта. Также получил практику в интеграции верстки с backend и базами данных.
           Особое внимание уделялось работе с инструментами разработки: редакторами кода, системами контроля версий (Git)
           и отладкой. Курс помог мне укрепить профессиональные навыки и структурировать опыт, который я уже имел.
-
           Обучение завершил с отличием, активно участвовал в выполнении проектов, которые требовали создания
           полноценного интерфейса с учетом требований заказчика.
         </p>
@@ -338,42 +334,36 @@
       </div>
     </div>
 
-
+    <!-- ======= Третий блок обучения ======= -->
     <div class="row section flex-md-row mt-md-5">
       <div class="col-12 col-md-6 order-md-1">
-        <img src="img/diplom.jpg" alt="">
+        <img src="img/diplom.jpg" alt="Диплом Агроном" class="img-fluid">
       </div>
       <div class="col-12 col-md-6 mt-3 mt-md-0 d-flex flex-column align-items-center">
         <div class="clamped-text mt-md-5">
-          <p>Я получил диплом по специальности агрохимия и агропочвоведение, обучаясь в университете на протяжении 5
+          <p>
+            Я получил диплом по специальности агрохимия и агропочвоведение, обучаясь в университете на протяжении 5
             лет. Учёба позволила мне глубоко изучить вопросы химического состава почвы, питания растений и эффективного
-            использования удобрений. Моей дипломной работой была тема, посвящённая **биогумусу** — экологически чистому
+            использования удобрений. Моей дипломной работой была тема, посвящённая биогумусу — экологически чистому
             органическому удобрению пролонгированного действия. В своей работе я изучал его влияние на структуру почвы,
             содержание питательных веществ и урожайность культур. Биогумус доказал свою ценность как устойчивый источник
-            органики, который улучшает плодородие почвы и поддерживает баланс экосистемы.
-
-            На протяжении более 20 лет я не только занимался агрономией как своим хобби и бизнесом. Мне довелось
-            работать на агрофермах, где я занимался разработкой систем удобрений, мониторингом состояния почв и
-            внедрением прогрессивных технологий в растениеводстве.
-
-
-            Моё главное увлечение — это прогрессивное растениеводство. Я убеждён, что инновационные технологии и
-            органические методы работы с почвой позволяют не только повышать урожайность, но и сохранять природные
-            ресурсы для будущих поколений.
+            органики, который улучшает плодородие почвы и поддерживает баланс экосистемы. На протяжении более 20 лет я не
+            только занимался агрономией как своим хобби и бизнесом. Мне довелось работать на агрофермах, где я занимался
+            разработкой систем удобрений, мониторингом состояния почв и внедрением прогрессивных технологий в
+            растениеводстве. Моё главное увлечение — это прогрессивное растениеводство. Я убеждён, что инновационные
+            технологии и органические методы работы с почвой позволяют не только повышать урожайность, но и сохранять
+            природные ресурсы для будущих поколений.
           </p>
-
         </div>
         <span class="toggle-button">Показать полностью</span>
-
-
       </div>
     </div>
   </main>
 
+  <!-- ======= Контакты ======= -->
   <div class="d-flex justify-content-center mt-md-5">
     <h1 class="fs-1">Контакты</h1>
   </div>
-
   <section class="cool-contact-window">
     <div class="row">
       <div class="col-12 col-lg-6 contact-form-area">
@@ -400,12 +390,13 @@
           <button type="submit">Отправить</button>
         </form>
       </div>
-      <div class="col-1 col-lg-6 images-area">
-        <img src="img/mailK2.webp" alt="Фото 1" class="img-one">
+      <div class="col-12 col-lg-6 images-area">
+        <img src="img/mailK2.webp" alt="Mail illustration" class="img-one">
       </div>
     </div>
   </section>
 
+  <!-- ========= FOOTER ========= -->
   <footer>
     <div id="contacts" class="footer-container">
       <video autoplay loop muted>
@@ -422,7 +413,6 @@
             <text x="50%" y="50%" font-size="20" font-weight="bold" fill="#343a40">Telegram</text>
             <text x="70%" y="50%" font-size="20" font-weight="bold" fill="#343a40">@Email</text>
             <rect x="1" y="110" width="1940" height="5" fill="#343a40" />
-
             <image x="16%" y="40" width="50" height="50" href="img/icon.svg" />
             <image x="39%" y="40" width="50" height="50" href="img/whatsapp.svg" />
             <image x="58%" y="40" width="50" height="50" href="img/telegram.svg" />
@@ -431,25 +421,30 @@
         </defs>
         <rect width="100%" height="100%" fill="#343a40" mask="url(#footer-mask)" />
       </svg>
+
+      <!-- Прозрачные кнопки -->
       <div class="transparent-buttons">
-        <a href="https://github.com/alexanderanuchin/django_project" class="transparent-button"
-          style="left: 10%; top: 30%;">GitHub</a>
+        <a href="https://github.com/alexanderanuchin/django_project"
+           class="transparent-button"
+           style="left: 10%; top: 30%;">GitHub</a>
         <a href="#" class="transparent-button" style="left: 30%; top: 30%;">WhatsApp</a>
         <a href="#" class="transparent-button" style="left: 50%; top: 30%;">Phone</a>
         <a href="#" class="transparent-button" style="left: 70%; top: 30%;">Skill</a>
-
       </div>
-    </div>
     </div>
   </footer>
 
-
+  <!-- GSAP и другие скрипты -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
+  <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- emailjs -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="emailjs_init.js"></script>
+  <!-- Подключение собственного скрипта -->
+  <script src="script.js"></script>
 </body>
-
 </html>
