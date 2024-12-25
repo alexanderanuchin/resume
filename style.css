@@ -1,0 +1,726 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #343a40;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ======================== HEADER ========================= */
+header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("img/myfoto.jpg") no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  letter-spacing: 0.05rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.06rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero-content .btn {
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+}
+
+/* ======================== MAIN ========================= */
+
+main {
+  margin-top: 100px;
+  letter-spacing: 0.05rem;
+}
+
+
+.profile-photo {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 2px #212529;
+}
+
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 20px;
+  border: #212529;
+  box-shadow: 2px 4px 10px 4px #212529;
+}
+
+.my-3blocks {
+  color: #fff; 
+  background: none; 
+  text-align: center;
+  padding: 40px 0;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+
+.my-3blocks h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Текст */
+.my-3blocks p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.clamped-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Снятие ограничений при раскрытии */
+.expanded {
+  -webkit-line-clamp: initial; 
+  display: block;
+  overflow: visible;
+}
+
+/* Кнопка-переключатель */
+.toggle-button {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/* ======================== FOOTER ========================= */
+footer {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: visible;
+  margin-top: 200px;
+}
+
+.footer-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+footer video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.transparent-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.transparent-button {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  pointer-events: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  font-size: 0;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+
+
+.metallo-magic {
+    height: 100vh; 
+    overflow: hidden;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metallo-scroll {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: fit-content;
+    overflow-x: visible;
+    padding-right: 0;
+    padding-left: 1100px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.metallo-card {
+    flex: 0 0 auto;
+    width: 370px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 10px 2px #212529;
+}
+
+.metallo-card .shape-box {
+    position: relative;
+    overflow: hidden;
+    max-width: 370px;
+    height: 430px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
+    margin: 10px 10px;
+}
+
+.metallo-card .shape-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewY(53.5deg);
+    transform-origin: top left;
+    transition: transform 0.4s;
+    background: #fff;
+    z-index: 1;
+}
+
+.metallo-card .shape-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.metallo-card .shape-box .brk-abs-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.metallo-card .shape-box figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    z-index: 3;
+}
+
+.metallo-card .shape-box figcaption .show-cont {
+    position: absolute;
+    bottom: calc(100% + 30px);
+    left: 30px;
+    right: 30px;
+    transition: bottom 0.4s ease;
+}
+
+.metallo-card .shape-box .card-no {
+    font-size: 36px;
+    color: red;
+    margin: 10px 0;
+}
+
+.metallo-card .shape-box .card-main-title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #292b2c;
+}
+
+.metallo-card .shape-box .card-content {
+    color: #9f9f9f;
+    margin-top: 20px;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.metallo-card .shape-box .read-more-btn {
+    border: 2px solid #db3236;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: inline-block;
+    background: #db3236;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.metallo-card .shape-box .read-more-btn:hover {
+    background: transparent;
+    color: #db3236;
+}
+
+.metallo-card .shape-box .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(90deg, #b8bec6e6, #5e6064);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.metallo-card .shape-box:hover:before {
+    transform: skewY(20deg);
+}
+
+.metallo-card .shape-box:hover figcaption {
+    transform: translateY(0);
+}
+
+.metallo-card .shape-box:hover figcaption .show-cont {
+    bottom: 100%;
+}
+
+.metallo-card .shape-box:hover .after {
+    opacity: 1;
+}
+
+
+
+.metallo-magic::after {
+    content: '← Прокрутите →';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #999;
+    animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.fixedChat {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1005; 
+}
+
+.scrollText {
+    display: inline-block;
+}
+
+
+
+.form-container {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+#feedbackMessage {
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+ .cool-contact-window {
+  background-color: #495057; 
+  border-radius: 10px;
+  margin: 50px; 
+  padding: 30px;
+  position: relative; 
+  overflow: hidden; 
+  box-shadow: 0 4px 10px 2px #212529;
+}
+
+
+.contact-form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form-area h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+
+.contact-form-area .form-control {
+  background-color: #6c757d; 
+  border: 1px solid #ced4da;
+  color: #fff;
+}
+.contact-form-area .form-control:focus {
+  background-color: #6c757d;
+  box-shadow: 0 0 0 0.2rem rgba(108,117,125,0.5);
+}
+.contact-form-area button[type="submit"] {
+  margin-top: 1rem;
+  background-color: #212529;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.contact-form-area button[type="submit"]:hover {
+  background-color: #343a40;
+}
+
+
+.form-check-label {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+}
+
+
+.images-area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img-one {
+  filter: brightness(85%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 992px) {
+  .img-two {
+    right: -20%;
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .cool-contact-window {
+    margin: 20px;
+    padding: 20px;
+  }
+  .img-two {
+    display: none;
+  }
+}
+/* ======================== АДАПТИВНОСТЬ ========================= */
+
+
+@media (max-width: 1024px) {
+  footer {
+    height: 120px;
+  }
+
+  .text-mask text {
+    font-size: 12px !important;/
+  }
+
+  .text-mask image {
+    width: 33px !important;
+    height: 33px !important;
+  }
+
+  #footer-mask text:nth-of-type(1) {
+    x: 10%;
+  }
+
+  #footer-mask text:nth-of-type(2) {
+    x: 30%;
+  }
+
+  #footer-mask text:nth-of-type(3) {
+    x: 50%;
+  }
+
+  #footer-mask text:nth-of-type(4) {
+    x: 70%;
+  }
+
+ 
+  #footer-mask image:nth-of-type(1) {
+    x: 15%;
+    y: 40;
+  }
+
+  #footer-mask image:nth-of-type(2) {
+    x: 37%;
+    y: 40;
+  }
+
+  #footer-mask image:nth-of-type(3) {
+    x: 56%;
+    y: 40;
+  }
+
+  .transparent-button {
+    width: 70px;
+    height: 40px;
+  }
+
+  #footer-mask rect:nth-of-type(3) {
+    x: 1;
+    y: 20;
+    height: 2px;
+  }
+
+  #footer-mask rect:nth-of-type(2) {
+    x: 1;
+    y: 90;
+    height: 2px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 810px) {
+  footer {
+    height: 100px;
+  }
+
+  .text-mask text {
+    font-size: 10px !important;
+  }
+
+  .text-mask image {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  #footer-mask text:nth-of-type(1) {
+    x: 10%;
+  }
+
+  #footer-mask text:nth-of-type(2) {
+    x: 30%;
+  }
+
+  #footer-mask text:nth-of-type(3) {
+    x: 50%;
+  }
+
+  #footer-mask text:nth-of-type(4) {
+    x: 70%;
+  }
+
+  /* Подгоняем координаты иконок */
+  #footer-mask image:nth-of-type(1) {
+    x: 15%;
+    y: 35;
+  }
+
+  #footer-mask image:nth-of-type(2) {
+    x: 37%;
+    y: 35;
+  }
+
+  #footer-mask image:nth-of-type(3) {
+    x: 56%;
+    y: 35;
+  }
+
+  #footer-mask rect:nth-of-type(3) {
+    x: 1;
+    y: 20;
+    height: 2px;
+  }
+
+  #footer-mask rect:nth-of-type(2) {
+    x: 1;
+    y: 70;
+    height: 2px;
+  }
+
+  .transparent-button {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 693px) {
+  footer {
+    height: 100px;
+  }
+
+  .text-mask text {
+    font-size: 9px !important;
+  }
+
+  .text-mask image {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  #footer-mask image:nth-of-type(1) {
+    x: 17%;
+    y: 35;
+  }
+
+  #footer-mask image:nth-of-type(2) {
+    x: 39%;
+    y: 35;
+  }
+
+  #footer-mask image:nth-of-type(3) {
+    x: 58%;
+    y: 35;
+  }
+
+  #footer-mask rect:nth-of-type(3) {
+    x: 1;
+    y: 20;
+    height: 2px;
+  }
+
+  #footer-mask rect:nth-of-type(2) {
+    x: 1;
+    y: 70;
+    height: 2px;
+  }
+
+  .transparent-button {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 486px) {
+
+  footer {
+    height: 100px;
+  }
+
+  .text-mask text {
+    font-size: 9px !important;
+  }
+
+  .text-mask image {
+    width: 17px !important;
+    height: 17px !important;
+  }
+
+  #footer-mask image:nth-of-type(1) {
+    x: 20%;
+    y: 37;
+  }
+
+  #footer-mask image:nth-of-type(2) {
+    x: 43%;
+    y: 37;
+  }
+
+  #footer-mask image:nth-of-type(3) {
+    x: 62%;
+    y: 37;
+  }
+
+  #footer-mask rect:nth-of-type(3) {
+    x: 1;
+    y: 20;
+    height: 2px;
+  }
+
+  #footer-mask rect:nth-of-type(2) {
+    x: 1;
+    y: 70;
+    height: 2px;
+  }
+
+  .transparent-button {
+    width: 70px;
+    height: 40px;
+  }
+}
